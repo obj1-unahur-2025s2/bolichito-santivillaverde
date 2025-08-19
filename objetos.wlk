@@ -22,6 +22,12 @@ object pardo {
   }
 }
 
+object naranja {
+  method esFuerte() {
+   return true  
+}
+}
+
 //Materiales
 
 object cobre {
@@ -130,6 +136,61 @@ object placa {
   method cambiarpeso(unValor){
     peso = unValor
   }
+  method material() {
+    return cobre
+  }
+}
+
+object arito {
+  
+  method color() {
+    return celeste
+  }
+
+  method peso() {
+   return 180
+  }
+
+  method material() {
+   return cobre
+  }
+}
+
+object banquito{
+  var color = naranja 
+	
+  method color() {
+    return color
+  }
+
+  method cambiarColor(unColor) {
+    color = unColor
+  }
+
+  method peso() {
+   return 1700
+  }
+
+  method material() {
+   return madera
+  }
+}
+
+object cajita{
+  var objeto = remera
+
+  method cambiarObjeto(unObjeto) {
+    objeto = unObjeto
+  }
+	
+  method color() {
+    return rojo
+  }
+
+  method peso() {
+    return 400 + objeto.peso()
+  }
+
   method material() {
     return cobre
   }
